@@ -1,0 +1,22 @@
+#contactPage #contactLogo {
+  margin: 35px 0 0 35px;
+}
+#contactPage .contactInfo {
+  width: 630px;
+  height: 346px;
+  margin: 75px auto;
+  background: url('../img/contactInfoBg.png');
+}
+#contactPage .contactInfo .contactInfoList {
+  margin-left: 240px;
+}
+#contactPage .contactInfo .contactInfoList p {
+  font-size: 30px;
+  color: #908787;
+}
+#contactPage #contactArrow {
+  float: right;
+  margin: 0 54px 97px;
+}
+
+/*# sourceMappingURL=maps/contact.css.map */
