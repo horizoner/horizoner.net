@@ -1,0 +1,34 @@
+#worksPage #worksLogo {
+  margin: 20px 0 0 35px;
+}
+#worksPage .worksMain {
+  width: 936px;
+  margin: 0 auto;
+}
+#worksPage .worksItem {
+  width: 230px;
+  height: 282px;
+  float: left;
+  margin: 0 123px 0px 0;
+}
+#worksPage .worksItem img {
+  width: 230px;
+  height: 232px;
+}
+#worksPage .worksItem h3,
+#worksPage .worksItem p {
+  margin: 0;
+}
+#worksPage .worksItemRight {
+  margin-right: 0;
+}
+#worksPage .worksMore p {
+  margin-top: 200px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#worksPage .worksMore p span {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=maps/works.css.map */
