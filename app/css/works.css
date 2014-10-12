@@ -1,33 +1,44 @@
-#worksPage #worksLogo {
-  margin: 20px 0 0 35px;
+.worksPage #worksLogo {
+  position: absolute;
+  left: 35px;
+  top: 20px;
+  right: 0;
+  bottom: 0;
 }
-#worksPage .worksMain {
+.worksPage .worksMain {
   width: 936px;
-  margin: 0 auto;
+  height: 553px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 95px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
-#worksPage .worksItem {
+.worksPage .worksItem {
   width: 230px;
   height: 282px;
   float: left;
   margin: 0 123px 0px 0;
 }
-#worksPage .worksItem img {
+.worksPage .worksItem img {
   width: 230px;
   height: 232px;
 }
-#worksPage .worksItem h3,
-#worksPage .worksItem p {
+.worksPage .worksItem h3,
+.worksPage .worksItem p {
   margin: 0;
 }
-#worksPage .worksItemRight {
+.worksPage .worksItemRight {
   margin-right: 0;
 }
-#worksPage .worksMore p {
+.worksPage .worksMore p {
   margin-top: 200px;
   font-size: 18px;
   font-weight: bold;
 }
-#worksPage .worksMore p span {
+.worksPage .worksMore p span {
   vertical-align: middle;
 }
 
