@@ -1,0 +1,131 @@
+.page2{
+	min-width: 1024px;
+}
+.aboutCont *{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	border: none;
+	border: 0;
+}
+.aboutusSro{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 100%;
+}
+.aboutLogo{
+	position: absolute;
+	top: 0;
+	left: 3.13%;
+	height: 9.76%;
+	width: auto;
+}
+.aboutTop{
+	margin: 0 auto;
+	padding: 5.21% 0 0 74px;
+	width: 908px;
+}
+.aboutHistory,.aboutHisInt{
+	width: 66.6%;
+	font-size: 30px;
+	font-family: "Microsoft YaHei","微软雅黑";
+	color: #fbf5f5;
+}
+.aboutstuPho{
+	height: 200px;
+	width: auto;
+	float: right;
+	margin-top: -70px;
+}
+.aboutbottom{
+	margin: 0 auto 4.21% auto;
+	padding-left: 74px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	height: 53.38%;
+	width: 908px;
+	overflow: hidden;
+}
+.aboutWra{
+	clear:both;
+	width:3072px;
+	position: relative;
+	left: 0px;
+}
+.aboutHead{
+	float: left;
+	position: relative;
+	width: 450px;
+	height: 30%;
+	margin-bottom: 20px;
+}
+.aboutHeada{
+	float: left;
+}
+.aboutHeadPho{
+	width: 
+	border-radius: 50px 50px 50px 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
+
+	-webkit-transition: 0.8s all;
+    -moz-transition: 0.8s all;
+    -o-transition: 0.8s all;
+    transition: 0.8s all;
+}
+.aboutHeada:hover img{
+	-webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.aboutHisInt{
+	float: left;
+	font-size: 16px;
+	color: #fbf5f5;
+	width: 70%;
+	height: 30%;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.aboutMore{
+	float: right;
+	font-size: 16px;
+	font-family: "Microsoft YaHei","微软雅黑";
+	color: #fbf5f5;
+	margin: 10px 241px 0 0;
+}
+.aboutBack{
+	float: right;
+	font-size: 16px;
+	font-family: "Microsoft YaHei","微软雅黑";
+	color: #fbf5f5;
+	margin: 10px 1px 0 0;
+}
+.aboutBack2{
+	float: right;
+	font-size: 16px;
+	font-family: "Microsoft YaHei","微软雅黑";
+	color: #fbf5f5;
+	margin: 10px 305px 0 0;
+}
+.aboutMore:hover{
+	text-shadow:2px 2px 3px #fbf5f5;
+}
+.aboutBack:hover{
+	text-shadow:-2px 2px 3px #fbf5f5;
+}
+.aboutusAngle{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	height: 7.40%;
+	width: auto;
+}

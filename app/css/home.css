@@ -1,0 +1,64 @@
+.page1 *{
+	margin: 0;
+	padding: 0;
+	border: none;
+	border: 0;
+}
+.page1{
+	background-color: #191919;
+	min-width: 1024px;
+}
+.homeCont{
+	margin: 1% auto 0;
+	width: 1024px;
+}
+.homeNav{
+	position: relative;
+	float: left;
+	width: 467px;
+	margin-left: 30px;
+}
+.homeNav img{
+    height: 100%;
+    width: 100%;
+}
+.homeNav .homeTitleBg{
+	width: 467px;
+	height: 258px;
+}
+.homeNav .homeAboutus{
+	width: 74px;
+	height: 89px;
+	position: absolute;
+	top: 165px;
+	left: 31px;
+}
+.homeNav .homeOurwork{
+	width: 74px;
+	height: 89px;
+	position: absolute;
+	top: 148px;
+	left: 159px;
+}
+.homeNav .homeContact{
+	width: 74px;
+	height: 89px;
+	position: absolute;
+	top: 165px;
+	left: 283px;
+}
+.homeLogo{
+	float: right;
+	padding: 170px 100px 0 0;
+}
+.homeFooter{
+	overflow: hidden;
+	height: 33.15%;
+	width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.homeFooter img{
+	width: 100%;
+	height: 100%;
+}
