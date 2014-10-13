@@ -1,5 +1,5 @@
 .contactPage #contactLogo {
-  margin: 35px 0 0 35px;
+  margin: 22px 0 0 35px;
   position: absolute;
 }
 .contactPage .contactInfo {
@@ -13,12 +13,23 @@
   bottom: 0;
   background: url('../img/contactInfoBg.png');
 }
+.contactPage .contactInfo .contactPanel {
+  margin-top: 78px;
+  margin-left: 50px;
+  float: left;
+}
 .contactPage .contactInfo .contactInfoList {
+  margin-top: 98px;
   margin-left: 240px;
 }
 .contactPage .contactInfo .contactInfoList p {
   font-size: 30px;
   color: #908787;
+  margin: 23px;
+}
+.contactPage .contactInfo .contactInfoList p span {
+  width: 75px;
+  display: inline-block;
 }
 .contactPage #contactArrow {
   position: absolute;
