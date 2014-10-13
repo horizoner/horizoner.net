@@ -1,5 +1,6 @@
 .contactPage #contactLogo {
   margin: 35px 0 0 35px;
+  position: absolute;
 }
 .contactPage .contactInfo {
   width: 630px;
