@@ -1,0 +1,45 @@
+.worksPage #worksLogo {
+  position: absolute;
+  left: 35px;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+}
+.worksPage .worksMain {
+  width: 936px;
+  height: 553px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 95px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.worksPage .worksItem {
+  width: 230px;
+  height: 282px;
+  float: left;
+  margin: 0 123px 0px 0;
+}
+.worksPage .worksItem img {
+  width: 230px;
+  height: 232px;
+}
+.worksPage .worksItem h3,
+.worksPage .worksItem p {
+  margin: 0;
+}
+.worksPage .worksItemRight {
+  margin-right: 0;
+}
+.worksPage .worksMore p {
+  margin-top: 200px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.worksPage .worksMore p span {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=maps/works.css.map */

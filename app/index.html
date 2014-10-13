@@ -5,6 +5,7 @@
     <meta name="keywords" content="地平线工作室" />
     <meta name="description" content="地平线工作室" />
 	<link type="text/css" rel="stylesheet" href="css/style.css">
+<<<<<<< HEAD
     <link type="text/css" rel="stylesheet" href="css/home.css">
     <link type="text/css" rel="stylesheet" href="css/aboutus.css">
 	<link type="text/css" rel="stylesheet" href="css/contact.css">
@@ -13,11 +14,17 @@
 	<script src="js/jquery.onepage-scroll.min.js"></script>
     <script src="js/home.js"></script>
     <script src="js/aboutus.js"></script>
+=======
+    <link type="text/css" rel="stylesheet" href="css/works.css">
+	<link type="text/css" rel="stylesheet" href="css/contact.css">
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+>>>>>>> e14127ca3acfb0469518745956f44f6e067409d9
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<title>地平线工作室</title>
 </head>
 <body>
     <div class="main">
+<<<<<<< HEAD
         <section class="page1">
             <div class="homeCont">
                 <div class="homeNav">
@@ -187,8 +194,62 @@
                 </div>
                 <img src="img/aboutusAngle.png" class="aboutusAngle">
             </div>
+=======
+        <section class="page page1">
+            <h1>hello</h1>
+            <img src="img/logo.png" class="logo" />
         </section>
-        <section id="contactPage">
+        <section class="page page2">
+            <h1>hello</h1>
+            <img src="img/logo.png" class="logo" />
+>>>>>>> e14127ca3acfb0469518745956f44f6e067409d9
+        </section>
+
+        <!-- works page start -->
+        <section class="page worksPage">
+            <img src="img/worksLogo.png" id="worksLogo" />
+            <div class="worksMain">
+                <div class="worksItem">
+                    <img src="img/worksExample.jpg">
+                    <h3>作品名称</h3>
+                    <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
+                </div>
+                <!-- works item end -->
+                <div class="worksItem">
+                    <img src="img/worksExample.jpg">
+                    <h3>作品名称</h3>
+                    <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
+                </div>
+                <!-- works item end -->
+                <div class="worksItem worksItemRight">
+                    <img src="img/worksExample.jpg">
+                    <h3>作品名称</h3>
+                    <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
+                </div>
+                <!-- works item end  -->
+                <div class="worksItem">
+                    <img src="img/worksExample.jpg">
+                    <h3>作品名称</h3>
+                    <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
+                </div>
+                <!-- works item end  -->
+                <div class="worksItem">
+                    <img src="img/worksExample.jpg">
+                    <h3>作品名称</h3>
+                    <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
+                </div>
+                <!-- works item end  -->
+                <div class="worksItem worksMore worksItemRight">
+                    <p>more<span>>></span></p>
+                </div>
+            </div>
+            <!-- works main end -->
+            <img src="img/logo.png" class="logo" />
+        </section>
+        <!-- works page end -->
+
+        <!-- contact page start -->
+        <section class="page contactPage">
             <img src="img/contactLogo.png" id="contactLogo" />
             <div class="contactInfo">
             	<div class="contactInfoList">
@@ -197,25 +258,36 @@
 	           		<p>Addr: 光电楼333</p>
            		</div>
             </div>
-            <img src="img/contactArrow.png" id="contactArrow" />
+            <a href="javascript:"><img src="img/contactArrow.png" id="contactArrow" /></a>
+            <img src="img/logo.png" class="logo" />
         </section>
+<<<<<<< HEAD
         <section class="page2">
             <h1>hello</h1>
         </section>
+=======
+        <!-- contact page end -->
+>>>>>>> e14127ca3acfb0469518745956f44f6e067409d9
     </div>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/onepage-scroll.min.js"></script>
+    <script src="js/sea.js"></script>
     <script>
-        $(document).ready(function(){
-            $(".main").onepage_scroll({
-                sectionContainer: "section",
-                animationTime: 600,
-                updateURL: true,
-                responsiveFallback: 600,
-                loop: true,
-                //direction: "horizontal"
-            });
+        seajs.config({
+            base: "./js/",
+            alias: {
+              "jquery": "jquery.min.js",
+              // "scrollSrc": "onepage-scroll.min.js"
+            }
         });
 
+        seajs.use('init', function(fn) {
+            $(".main").onepage_scroll(fn.conf);
+        });
+
+        seajs.use('works');
+        seajs.use('contact');
     </script>
 </body>
 </html>
