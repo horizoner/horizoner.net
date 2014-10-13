@@ -10,8 +10,6 @@
     <link type="text/css" rel="stylesheet" href="css/aboutus.css">
 	<link type="text/css" rel="stylesheet" href="css/contact.css">
     <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
-    <script src="js/home.js"></script>
-    <script src="js/aboutus.js"></script>
     <link type="text/css" rel="stylesheet" href="css/works.css">
 	<link type="text/css" rel="stylesheet" href="css/contact.css">
     <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
@@ -24,13 +22,13 @@
             <div class="homeCont">
                 <div class="homeNav">
                     <img src="img/homeTitleBg.png" class="homeTitleBg">
-                    <a href="#2" class="homeAboutus">
+                    <a href="javascript:void(0);" class="homeAboutus">
                         <img src="img/homeAboutus.png">
                     </a>
-                    <a href="#3" class="homeOurwork">
+                    <a href="javascript:void(0);" class="homeOurwork">
                         <img src="img/homeOurwork.png">
                     </a>
-                    <a href="#4" class="homeContact">
+                    <a href="javascript:void(0);" class="homeContact">
                         <img src="img/homeContact.png">
                     </a>
                 </div>
@@ -274,6 +272,8 @@
         });
 
         seajs.use('works');
+        seajs.use('aboutus');
+        seajs.use('home');
         seajs.use('contact');
     </script>
 </body>
