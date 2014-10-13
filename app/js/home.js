@@ -16,8 +16,22 @@ define(function (require, exports, module) {
             $(this).stop().animate({ top: '148px' }, 100);
         });
 
-        $("homeAboutus").click(function{
-            var 
+        $(".homeAboutus").click(function(){
+            var a = $.Event("keydown");
+            a.which = 40;
+            $(".page2").trigger(a);
+        })
+
+        $(".homeOurwork").click(function(){
+            var c = $.Event("keydown");
+            c.which = 40;
+            $(".main").trigger(c);
+        })
+
+        $(".homeContact").click(function(){
+            var b = $.Event("keydown");
+            b.which = 38;
+            $(".contactPage").trigger(b);
         })
     })()
 })
