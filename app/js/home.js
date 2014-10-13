@@ -1,4 +1,6 @@
 define(function (require, exports, module) {
+    var action = require('action');
+
     (function(){
         $(".homeNav .homeAboutus,.homeContact").mouseenter(function()
         {
@@ -17,21 +19,16 @@ define(function (require, exports, module) {
         });
 
         $(".homeAboutus").click(function(){
-            var a = $.Event("keydown");
-            a.which = 40;
-            $(".page2").trigger(a);
+            action.clickScroll(40);
         })
 
         $(".homeOurwork").click(function(){
-            var c = $.Event("keydown");
-            c.which = 40;
-            $(".main").trigger(c);
+            action.clickScroll(40);
+            action.clickScroll(40);
         })
 
         $(".homeContact").click(function(){
-            var b = $.Event("keydown");
-            b.which = 38;
-            $(".contactPage").trigger(b);
+            action.clickScroll(38);
         })
     })()
 })
