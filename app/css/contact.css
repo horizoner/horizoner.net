@@ -2,6 +2,9 @@
   margin: 22px 0 0 35px;
   position: absolute;
 }
+.contactPage .contactSideArrow {
+  height: 100%;
+}
 .contactPage .contactInfo {
   width: 630px;
   height: 346px;

@@ -1,7 +1,10 @@
 define(function (require, exports, module) {
 	(function () {
-		$(window).resize(function() {
-			// $('.worksMain').css('height', $(document).height());
+		$(".worksItem").click(function() {
+			$('.worksInfoLayer').css('display', 'block');
 		});
+		$('.worksCloseLayer').click(function() {
+			$('.worksInfoLayer').css('display', 'none');
+		})
  	})();
 })

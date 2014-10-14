@@ -5,6 +5,9 @@
   right: 0;
   bottom: 0;
 }
+.worksPage .worksSideArrow {
+  height: 100%;
+}
 .worksPage .worksMain {
   width: 936px;
   height: 553px;
@@ -16,6 +19,33 @@
   bottom: 0;
   overflow: hidden;
 }
+.worksPage h3,
+.worksPage p {
+  margin: 0;
+}
+.worksPage .worksInfoLayer {
+  display: none;
+  background: #e6e6e6;
+  width: 100%;
+  height: 100%;
+}
+.worksPage .worksInfoLayer .worksCloseLayer {
+  float: right;
+}
+.worksPage .worksInfoLayer .worksLayerContent {
+  width: 271px;
+  height: 400px;
+  position: absolute;
+  left: 330px;
+  top: 64px;
+  border: 1px solid red;
+  color: black;
+  overflow: hidden;
+}
+.worksPage .worksInfoLayer .worksLayerContent img {
+  width: inherit;
+  height: 232px;
+}
 .worksPage .worksItem {
   width: 230px;
   height: 282px;
@@ -26,20 +56,22 @@
   width: 230px;
   height: 232px;
 }
-.worksPage .worksItem h3,
-.worksPage .worksItem p {
-  margin: 0;
+.worksPage .worksItem :hover {
+  cursor: pointer;
 }
 .worksPage .worksItemRight {
   margin-right: 0;
 }
-.worksPage .worksMore p {
-  margin-top: 200px;
-  font-size: 18px;
-  font-weight: bold;
+.worksPage .worksMore {
+  display: inherit;
+  font-size: 16px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  color: #fbf5f5;
+  text-decoration: none;
+  margin: 480px 150px 0 0;
 }
-.worksPage .worksMore p span {
-  vertical-align: middle;
+.worksPage .worksMore:hover {
+  text-shadow: 2px 2px 3px #fbf5f5;
 }
 
 /*# sourceMappingURL=maps/works.css.map */
