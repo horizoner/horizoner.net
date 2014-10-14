@@ -34,9 +34,9 @@
 			width: 271px;
 			height: 400px;
 			position: absolute; left: 330px; top: 64px;
-			border: 1px solid red;
 			color: black;
 			overflow: hidden;
+			background-color: white;
 
 
 			img {
@@ -58,7 +58,6 @@
 		}
 
 		:hover {
-			// background-color: white;
 			cursor: pointer;
 		}
 	}
@@ -67,17 +66,22 @@
 		margin-right: 0;
 	}
 
-	.worksMore {
-		display: inherit;
+	.worksNav {
+		margin: 480px 150px 0 0;
+	}
+
+	.worksMore, .worksMoreLeft, .worksMoreRight {
 		font-size: 16px;
 		font-family: "Microsoft YaHei","微软雅黑";
 		color: #fbf5f5;
 		text-decoration: none;
-		margin: 480px 150px 0 0;
-
 	}
 
-	.worksMore:hover {
+	.worksMoreLeft, .worksMoreRight {
+		display: none;
+	}
+
+	.worksMore:hover, .worksMoreLeft:hover, .worksMoreRight:hover {
 		text-shadow:2px 2px 3px #fbf5f5;
 	} 
 

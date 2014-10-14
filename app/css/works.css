@@ -38,9 +38,9 @@
   position: absolute;
   left: 330px;
   top: 64px;
-  border: 1px solid red;
   color: black;
   overflow: hidden;
+  background-color: white;
 }
 .worksPage .worksInfoLayer .worksLayerContent img {
   width: inherit;
@@ -62,15 +62,24 @@
 .worksPage .worksItemRight {
   margin-right: 0;
 }
-.worksPage .worksMore {
-  display: inherit;
+.worksPage .worksNav {
+  margin: 480px 150px 0 0;
+}
+.worksPage .worksMore,
+.worksPage .worksMoreLeft,
+.worksPage .worksMoreRight {
   font-size: 16px;
   font-family: "Microsoft YaHei", "微软雅黑";
   color: #fbf5f5;
   text-decoration: none;
-  margin: 480px 150px 0 0;
 }
-.worksPage .worksMore:hover {
+.worksPage .worksMoreLeft,
+.worksPage .worksMoreRight {
+  display: none;
+}
+.worksPage .worksMore:hover,
+.worksPage .worksMoreLeft:hover,
+.worksPage .worksMoreRight:hover {
   text-shadow: 2px 2px 3px #fbf5f5;
 }
 
