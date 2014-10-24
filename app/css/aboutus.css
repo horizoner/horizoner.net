@@ -52,7 +52,6 @@
     right: 0;
 	height: 53.38%;
 	width: 936px;
-	overflow: hidden;
 }
 .aboutWra{
 	clear:both;
@@ -71,18 +70,20 @@
 	float: left;
 }
 .aboutHeadPho{
-	width: 
 	border-radius: 50px 50px 50px 50px;
 	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	-o-border-radius: 50px;
 
 	-webkit-transition: 0.8s all;
     -moz-transition: 0.8s all;
+    -ms-transition: 0.8s all;
     -o-transition: 0.8s all;
     transition: 0.8s all;
 }
 .aboutHeada:hover img{
+    -ms-border-radius: 50px;
 	-webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
@@ -90,34 +91,33 @@
 }
 .aboutHisInt{
 	float: left;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fbf5f5;
-	width: 70%;
+	width: 68%;
 	height: 30%;
+}
+.aboutfat{
+	padding-left: 2%;
 	text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
+.aboutMoreOption{
+    float: right;
+	position: relative;
+	margin: 80px 210px 0 0;
+}
 .aboutMore{
-	float: right;
+    float: right;
 	font-size: 16px;
 	font-family: "Microsoft YaHei","微软雅黑";
 	color: #fbf5f5;
-	margin: 10px 241px 0 0;
 }
 .aboutBack{
 	float: right;
 	font-size: 16px;
 	font-family: "Microsoft YaHei","微软雅黑";
 	color: #fbf5f5;
-	margin: 10px 1px 0 0;
-}
-.aboutBack2{
-	float: right;
-	font-size: 16px;
-	font-family: "Microsoft YaHei","微软雅黑";
-	color: #fbf5f5;
-	margin: 10px 305px 0 0;
 }
 .aboutMore:hover{
 	text-shadow:2px 2px 3px #fbf5f5;
