@@ -119,6 +119,12 @@
 	font-family: "Microsoft YaHei","微软雅黑";
 	color: #fbf5f5;
 }
+.aboutLoad{
+	float: right;
+	font-size: 16px;
+	font-family: "Microsoft YaHei","微软雅黑";
+	color: #fbf5f5;
+}
 .aboutMore:hover{
 	text-shadow:2px 2px 3px #fbf5f5;
 }
