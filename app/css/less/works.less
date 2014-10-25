@@ -25,23 +25,51 @@
 		width: 100%;
 		height: 100%;
 
-		.worksCloseLayer {
-			float: right;
-
-		}
-
 		.worksLayerContent {
-			width: 271px;
-			height: 400px;
-			position: absolute; left: 330px; top: 64px;
+			width: 936px;
+			height: 550px;
 			color: black;
 			overflow: hidden;
 			background-color: white;
 
-
-			img {
+			.flecheNavLeft, .flecheNavRight {
+				display: inline-block;
+				width: 75px;
+				height: 75px;
+				top: 230px;
+				position: absolute;
+				opacity: 0.3;
+			}
+			.flecheNavLeft:hover {
+				opacity: 1;
+			}
+			.flecheNavRight:hover {
+				opacity: 1;
+			}
+			.flecheNavLeft {
+				background: url('/img/flecheNav.png');
+				left: 10px;
+				-webkit-transform: scale(0.8) rotate(180deg);
+				-moz-transform: scale(0.8) rotate(180deg);
+				-o-transform: scale(0.8) rotate(180deg);
+				-ms-transform: scale(0.8) rotate(180deg);
+			}
+			.flecheNavRight {
+				background: url('/img/flecheNav.png');
+				right: 10px;
+				-webkit-transform: scale(0.8);
+				-moz-transform: scale(0.8);
+				-o-transform: scale(0.8);
+				-ms-transform: scale(0.8);
+			}
+			.worksInfoLayerImg {
 				width: inherit;
-				height: 232px;
+				height: 450px;
+			}
+
+			h3, p{
+				margin: 10px;
+				word-break: break-word;
 			}
 		}
 	}
@@ -60,6 +88,10 @@
 		:hover {
 			cursor: pointer;
 		}
+
+		p {
+			display: none;
+		}
 	}
 
 	.worksItemRight {
@@ -67,17 +99,20 @@
 	}
 
 	.worksNav {
-		margin: 480px 150px 0 0;
+		// margin: 480px 150px 0 0;
+		position: absolute;
+		right: 142px;
+		top: 480px;
 	}
 
-	.worksMore, .worksMoreLeft, .worksMoreRight {
+	.worksMore, .worksMoreLeft, .worksMoreRight, .worksLoading {
 		font-size: 16px;
 		font-family: "Microsoft YaHei","微软雅黑";
 		color: #fbf5f5;
 		text-decoration: none;
 	}
 
-	.worksMoreLeft, .worksMoreRight {
+	.worksMoreLeft, .worksMoreRight, .worksLoading {
 		display: none;
 	}
 
