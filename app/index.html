@@ -136,49 +136,50 @@
             <div class="worksMain"> 
                 <!-- 弹出层，显示项目具体信息 -->
                 <div class="worksInfoLayer">
-                    <img src="img/worksClose.png" class="worksCloseLayer">
                     <div class="worksLayerContent">
-                        <img src="img/worksExample.jpg">
-                        <h3>作品名称</h3>
-                        <p>hello world hello worldhello worldhello worldhello worldhello worldhello worldhello world
-                        hello worldhello worldhello worldhello worldhello worldhello worldhello worldhello world
-                        hello worldhello worldhello worldhello worldhello worldhello worldhello worldhello world</p>
+                        <div class="flecheNavLeft" ></div>
+                        <div class="flecheNavRight" ></div>
+                        <img class='worksInfoLayerImg' src="">
+                        <h3 itemId=''></h3>
+                        <p></p>
                     </div>
                 </div>
                 <div class="worksItemList">
-                    <div class="worksItem">
-                        <img src="img/worksExample.jpg">
-                        <h3>作品名称</h3>
-                        <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
-                    </div>
-                    <!-- works item end -->
-                    <div class="worksItem">
-                        <img src="img/worksExample.jpg">
-                        <h3>作品名称</h3>
-                        <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
-                    </div>
-                    <!-- works item end -->
-                    <div class="worksItem worksItemRight">
-                        <img src="img/worksExample.jpg">
-                        <h3>作品名称</h3>
-                        <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
+                    <div class="worksItem" id="worksItem1">
+                        <img src="img/works/1.jpg">
+                        <h3>智慧我家(成都广电宽带网)</h3>
+                        <p></p>
                     </div>
                     <!-- works item end  -->
-                    <div class="worksItem">
-                        <img src="img/worksExample.jpg">
-                        <h3>作品名称</h3>
-                        <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
+                    <div class="worksItem" id="worksItem2">
+                        <img src="img/works/2.jpg">
+                        <h3>云上购物平台</h3>
+                        <p></p>
                     </div>
                     <!-- works item end  -->
-                    <div class="worksItem">
-                        <img src="img/worksExample.jpg">
-                        <h3>作品名称</h3>
-                        <!-- <p>hello world;hello worldhello worldhello worldhello worldhello worldhello worldhello world</p> -->
+                    <div class="worksItem worksItemRight" id="worksItem3">
+                        <img src="img/works/3.jpg">
+                        <h3>光电信息学院</h3>
+                        <p></p>
                     </div>
                     <!-- works item end  -->
-                    <input type='hidden' val='5' id='worksLastId' />
+                    <div class="worksItem" id="worksItem4">
+                        <img src="img/works/4.jpg">
+                        <h3>一名儿童教育</h3>
+                        <p></p>
+                    </div>
+                    <!-- works item end  -->
+                   <div class="worksItem" id="worksItem5">
+                       <img src="img/works/5.jpg">
+                       <h3>鸡血网</h3>
+                       <p></p>
+                   </div>
+                    <!-- works item end  -->
                 </div> <!-- worksItemList end -->
+                <input type='hidden' value='5' id='worksLastId' />
+                <input type='hidden' value='1' id='worksFirstId' />
                 <div class="worksNav">
+                    <span class="worksLoading">Loading...</span>
                     <a href="javascript:void(0);" class="worksMore">more&gt;&gt;</a>
                     <a href="javascript:void(0);" class="worksMoreLeft">&lt;</a>&nbsp;&nbsp;
                     <a href="javascript:void(0);" class="worksMoreRight">&gt;</a>
@@ -223,6 +224,7 @@
             $(".main").onepage_scroll(fn.conf);
         });
 
+        seajs.use('onload');
         seajs.use('works');
         seajs.use('aboutus');
         seajs.use('home');
