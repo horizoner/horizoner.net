@@ -1,11 +1,15 @@
 define(function (require, exports, module) {
 	(function () {
 		$(".worksItem").click(function(e) {
+			catInfo(e, $(this));
+		});
+
+		function catInfo(e, obj) {
 			e.stopPropagation();
-			var imgSrc = $(this).find('img').attr('src');
-			var worksInfo = $(this).find('p').text();
-			var worksName = $(this).find('h3').text();
-			var itemId = $(this).attr('id');
+			var imgSrc = obj.find('img').attr('src');
+			var worksInfo = obj.find('p').text();
+			var worksName = obj.find('h3').text();
+			var itemId = obj.attr('id');
 
 			$('.worksInfoLayer').find('h3').text(worksName);
 			$('.worksInfoLayer').find('h3').attr('itemId', itemId);
@@ -13,7 +17,7 @@ define(function (require, exports, module) {
 			$('.worksInfoLayerImg').attr('src', imgSrc);
 			$('.worksInfoLayer').css('display', 'block');
 
-		});
+		}
 
 		$('.worksPage').click(function(e) {
 			if ($(e.target).closest('.worksInfoLayer').length == 0) {
@@ -72,9 +76,14 @@ define(function (require, exports, module) {
 		function changeItem(content, callback) {
 			var i = 0;
 			// replace all works
+			var html = "<div class='worksItem' id='worksItem1'><img src=''><h3></h3><p></p></div><div class='worksItem' id='worksItem2'><img src=''><h3></h3><p></p></div><div class='worksItem worksItemRight' id='worksItem3'><img src=''><h3></h3><p></p></div><div class='worksItem' id='worksItem4'><img src=''><h3></h3><p></p></div><div class='worksItem' id='worksItem5'><img src=''><h3></h3><p></p></div>";
+			$('.worksItemList').html(html);
+			$(".worksItem").bind('click', function(e) {
+				catInfo(e, $(this));
+			});
 			$.each($('.worksItem'), function() {
 				if (i < content.length) {
-					i == 0 ? $('worksFirstId').val(content[i].id) : '';
+					i == 0 ? $('#worksFirstId').val(content[i].id) : '';
 					content[i].img = 'http://192.168.1.102/horizoner.net/public' + content[i].img.substr(content[i].img.indexOf('/'))
 					$(this).find('img').attr('src', content[i].img);
 					$(this).find('h3').text(content[i].name);
@@ -93,7 +102,7 @@ define(function (require, exports, module) {
 
 		function changeLayerContent(direction) {
 			var thisId = Number($('.worksLayerContent h3').attr('itemId').substr(-1));
-			var itmeNum = $('.worksItemList').children().length;
+			var itemNum = $('.worksItemList').children().length;
 			if (direction == 'right') {
 				thisId = thisId == itemNum ? 1 : thisId + 1;
 			} else {
